@@ -34,7 +34,7 @@ export default class App extends Component {
   async fetchPhotos() {
         this.setState({
           loading: true,
-          
+          error: null,
         })
         const { search, page } = this.state;
         try {
