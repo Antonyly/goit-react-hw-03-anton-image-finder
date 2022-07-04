@@ -39,6 +39,7 @@ export default class App extends Component {
         const { search, page } = this.state;
         try {
           const data = await getPhotos(search, page);
+           const totalPages = Math.ceil(data.totalHits / 12);
 
             this.setState(({ items }) => {
                 return {
@@ -46,7 +47,10 @@ export default class App extends Component {
                 }
             })
           if ( data.hits.length === 0) {
-          return toast.error('Sorry, no images found. Please, try again!');
+          return toast.error('Sorry, no images found');
+          }
+          if (page === totalPages) {
+          toast.info("These are all pictures. Try entering something else in the field!");
         }
         } catch (error) {
             this.setState({
