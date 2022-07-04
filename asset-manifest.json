@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/goit-react-hw-03-roma-image-finder/static/css/main.29e18987.css",
-    "main.js": "/goit-react-hw-03-roma-image-finder/static/js/main.07eaa914.js",
+    "main.js": "/goit-react-hw-03-roma-image-finder/static/js/main.ad240d81.js",
     "index.html": "/goit-react-hw-03-roma-image-finder/index.html",
     "main.29e18987.css.map": "/goit-react-hw-03-roma-image-finder/static/css/main.29e18987.css.map",
-    "main.07eaa914.js.map": "/goit-react-hw-03-roma-image-finder/static/js/main.07eaa914.js.map"
+    "main.ad240d81.js.map": "/goit-react-hw-03-roma-image-finder/static/js/main.ad240d81.js.map"
   },
   "entrypoints": [
     "static/css/main.29e18987.css",
-    "static/js/main.07eaa914.js"
+    "static/js/main.ad240d81.js"
   ]
 }
