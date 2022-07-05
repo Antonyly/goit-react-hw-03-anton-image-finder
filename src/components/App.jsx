@@ -94,6 +94,7 @@ export default class App extends Component {
   render() {
     const { items, loading, error, modalOpen, modalContent} = this.state;
     const { loadMore, changeSearch, showModal, closeModal } = this;
+    const { text } = this.props;
 
     return (
       <div className={s.app}>
@@ -113,7 +114,7 @@ export default class App extends Component {
          <ImageGallery onClick={showModal} items={items} />
         )}
         {loading && <Loader />}
-        {!loading && items.length >= 12 && <Button onClick={loadMore} />}
+        {!loading && items.length >= 12 && <Button onClick={loadMore} text={text} />}
         <ToastContainer position="top-right" autoClose={5000} theme="dark"/>
       </div>
     );
