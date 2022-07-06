@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from './button.module.css';
 
 
-const Button = ({ onClick }) => {
+const Button = ({ text, onClick }) => {
     return (
          <button
             className={s.button}
@@ -10,7 +10,7 @@ const Button = ({ onClick }) => {
             id="load-more"
             onClick={onClick}
         >
-            Load more
+            {text}
         </button>
     );
 };
